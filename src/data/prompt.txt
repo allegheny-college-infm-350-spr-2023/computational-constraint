@@ -1,0 +1,1 @@
+Perform the Oulipean prisoner's constraint on the text
