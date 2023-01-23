@@ -27,7 +27,7 @@ def main():
     prompt = load_file("data/prompt.txt")
 
     # Create constraint
-    constraint = f"{prompt}:\n\n{source}"
+    constraint = f"{prompt}:\n{source}"
 
     response = openai.Completion.create(
         # The model; other choices (with explanation):
@@ -36,8 +36,8 @@ def main():
         # Data to feed to the model
         prompt = constraint,
         # "Level of risk" associated with model predictions
-        temperature = 0.1,
-        top_p = 0.1,
+        temperature = 0.9,
+        top_p = 1,
         # Maximum size of requests (this is already max size)
         max_tokens = (4097 - len(constraint)),
         # Number of results to attempt and return
