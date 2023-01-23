@@ -1,3 +1,1 @@
-do not use the letter a
-
-apply these rules to the following text
+remove all uses of the letter 'a' from the following passage:
