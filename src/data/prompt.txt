@@ -1,1 +1,1 @@
-Perform the Oulipean prisoner's constraint on the text
+Write a story. You cannot use any words that contain the letter "E".

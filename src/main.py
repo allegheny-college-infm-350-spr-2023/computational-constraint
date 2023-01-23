@@ -16,6 +16,7 @@ openai.api_key = OPEN_AI_KEY
 openai.organization = OPEN_AI_ORG
 
 def load_file(filename: str = "") -> str:
+    """Loads an arbitrary file name"""
     with open(filename, "r") as fh:
         return fh.read()
 
@@ -29,14 +30,21 @@ def main():
     constraint = f"{prompt}:\n\n{source}"
 
     response = openai.Completion.create(
+        # The model; other choices (with explanation):
+        # https://beta.openai.com/docs/models/gpt-3
         model = "text-davinci-003",
+        # Data to feed to the model
         prompt = constraint,
-        temperature = 0.9,
+        # "Level of risk" associated with model predictions
+        temperature = 0.1,
+        top_p = 0.1,
+        # Maximum size of requests (this is already max size)
         max_tokens = (4097 - len(constraint)),
-        frequency_penalty = 2.0,
-        presence_penalty = -2.0
+        # Number of results to attempt and return
+        n = 1
     )
 
+    # Iterate through the various responses from the model
     for choice in response["choices"]:
         print(choice["text"].strip())
 
