@@ -31,7 +31,7 @@
 
 ## Summary
 
-Prompt engineering -- the practice of learning to con/destructively "pilot" a generative model -- is one of the surprising new skills to emerge out of the development of context-aware large language models (LLM). Simple enough, prompt engineering is the practice of instructing a model to produce an output consistent with the prompter's intent or desire. While we've given a new name to what essentially amounts to "asking the right questions," prompt engineering is much more than that.
+Prompt engineering -- the practice of learning to con/destructively "pilot" a generative model -- is one of the surprising new skills to emerge out of the development of context-aware large language models (LLM). Simply put: prompt engineering is the practice of instructing a model to produce an output consistent with the prompter's intent or desire. While we've given a new name to what essentially amounts to "asking the right questions," prompt engineering is much more than that.
 
 To date, successful prompt engineering endeavors to ask what an artist _wants_ to happen. This assignment approaches generative writing with large language models (LLM) from an opposite perspective. Drawing on the practice of the _Ouvroir de littérature potentielle_ (“Oulipo”), we challenge GPT-3 to a more difficult task—producing works of "constrained" writing to discover what LLM can and, more importantly, cannot do. 
 
